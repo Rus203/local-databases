@@ -1,0 +1,11 @@
+{
+  "name": "databases",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "ms-sql:up": "docker-compose -f ms-sql-server.yml up --build",
+    "ms-sql:down": "docker-compose -f ms-sql-server.yml down",
+    "ps": "docker ps"
+  }
+}
