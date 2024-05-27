@@ -1,14 +1,12 @@
-version: '3.8'
-
 services:
   ms-sql: 
     image: mcr.microsoft.com/mssql/server:2019-latest
-    container_name: ms-sql
+    container_name: ms_sql_container
     restart: always
     ports: 
       - 1433:1433
     environment:
-      - SA_PASSWORD=tXmYrAzB3D
+      - SA_PASSWORD=${MS_SQL_PASSWORD}
       - ACCEPT_EULA=Y
       - SQL_PID=Developer
     volumes:
