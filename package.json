@@ -4,19 +4,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "ms-sql:up": "docker-compose -f ms-sql-server.yml up --build",
+    "ms-sql:up": "docker-compose -f ms-sql-server.yml up --build -d",
     "ms-sql:down": "docker-compose -f ms-sql-server.yml down",
 
-    "mongo:up": "docker-compose -f mongo-db.yml up --build",
+    "mongo:up": "docker-compose -f mongo-db.yml up --build -d",
     "mongo:down": "docker-compose -f mongo-db.yml down",
 
-    "mysql:up": "docker-compose -f mysql.yml up --build",
+    "mysql:up": "docker-compose -f mysql.yml up --build -d",
     "mysql:down": "docker-compose -f mysql.yml down",
 
-    "postgresql:up": "docker-compose -f postgre-sql.yml up --build",
+    "postgresql:up": "docker-compose -f postgre-sql.yml up --build -d",
     "postgresql:down": "docker-compose -f postgre-sql.yml down",
 
-    "redis:up": "docker-compose -f redis.yml up --build",
+    "redis:up": "docker-compose -f redis.yml up --build -d",
     "redis:down": "docker-compose -f redis.yml down",
 
 
